@@ -3,18 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap');
 
-h1 { font-family: 'DM Sans', sans-serif; font-size: 20px;}
-h2 { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 500;}
-h3 { font-family: 'Raleway', sans-serif; font-size: 16px;font-weight: 500}
-p {font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 200;}
+h1 { font-family: 'DM Sans', sans-serif; font-size: 24px; font-weight: 300;}
+h2 { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 900;}
+h3 { font-family: 'Raleway', sans-serif; font-size: 16px;font-weight:400;}
+p {font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 200;}
 
 /* header */
+
+body {
+    margin: 0;
+}
 
 .header {
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.header i{
+    font-size: 20px;
 }
 
 .logo {
@@ -27,33 +37,43 @@ p {font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 200;}
     padding-left: 30px;
 }
 
-.header-left i{
-    padding: 5px;
-}
-
 .header-right {
     display: flex;
     padding-right: 30px;
 }
 
-.header-right i{
-    padding: 5px;
+.header-left i{
+    padding-right: 20px;
 }
 
-/*alt det der står til højre*/
+.header-right i{
+    padding-left: 20px;
+}
+
+
+/* main */
 
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 90px;
 }
 
-.info {
-    background-color: rgb(187, 187, 187);
-    padding: 50px 100px 100px 100px;
-}
+/*slideshow*/
 
 .slideshow{
     background-color: red;
+}
+
+/*alt det der står til højre*/
+
+.info {
+    background-color: white;
+    padding: 30px 120px;
+}
+
+.info i{
+    font-size: 20px;
 }
 
 .container img {
@@ -62,29 +82,37 @@ p {font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 200;}
     object-fit: cover;
   }
 
-
 .american {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
 .priser {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .newPrice {
     padding-right: 10px;
     color: red;
+    font-weight: 100;
 }
 
 .oldPrice {
     text-decoration: line-through;
+    font-weight: 100;
 }
 
 .lavestePris {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+}
+
+.lavestePris i{
+    font-size: 15px;
 }
 
 .lavestePris *{
@@ -130,14 +158,43 @@ p {font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 200;}
     display:flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 
 }
 
-.add{
+.add {
     width: 100%;
     color: white;
     background-color: black;
     border: 0;
+}
+
+.warehouse {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.warehouse p {
+    padding-left: 10px;
+}
+
+.fragt {
+    display: flex;
+    align-items: center;
+}
+
+.fragt p {
+    padding-left: 10px;
+}
+
+.return {
+    display: flex;
+    align-items: center;
+}
+
+.return p {
+    padding-left: 10px;
 }
 
 
