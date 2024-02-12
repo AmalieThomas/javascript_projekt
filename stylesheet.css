@@ -15,12 +15,22 @@
 
 .header-left {
     display: flex;
-    padding: 50px;
+    padding-left: 30px;
+}
+
+.header-left i{
+    padding: 5px;
 }
 
 .header-right {
     display: flex;
+    padding-right: 30px;
 }
+
+.header-right i{
+    padding: 5px;
+}
+
 
 
 
