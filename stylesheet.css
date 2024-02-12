@@ -1,1 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+.header {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header ul {
+    list-style: none;
+    display: inline;
+    
+}
