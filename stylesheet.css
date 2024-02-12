@@ -1,16 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins:wght@500&family=Raleway&display=swap');
 
-.logo {
-    height: 50px;
-    width: auto;
-}
+/* header */
 
 .header {
-    background-color: green;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
 }
 
 .header-left {
@@ -30,6 +32,8 @@
 .header-right i{
     padding: 5px;
 }
+
+
 
 
 
