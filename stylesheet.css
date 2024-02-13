@@ -32,6 +32,7 @@ a {
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .header i{
@@ -107,6 +108,45 @@ background-color: white;}
 .droptitle:hover { text-decoration: underline;}
 .dropdowncontent a:hover {color: red;}
   
+
+/* shopping bag */
+.popup {
+    cursor: pointer;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext1 {
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    text-align: left;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    margin-left: -300px;
+  }
+
+  .popup .popuptext2 {
+    visibility: hidden;
+    width: 300px;
+    background-color: red;
+    color: black;
+    border: solid 1px black;
+    text-align: left;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    margin-left: -300px;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+  }
 
 /* main */
 

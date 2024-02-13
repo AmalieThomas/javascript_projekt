@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="da">
      <head>
-        <link rel="stylesheet" href="stylesheet.css"> 
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="slideshow.css">  
         <meta charset="UTF-8">
         <title>hn</title>
         <script src="https://kit.fontawesome.com/6eeebea63a.js" crossorigin="anonymous"></script>
         <script src="heart.js" defer></script>
+        <script src="slideshow.js" defer></script>
         <script src="menu.js" defer></script>
+        <script src="shopping-bag.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -20,7 +23,12 @@
                 <div class="header-right">
                     <div><a href="signup.html"><i class="fa-solid fa-user"></i></a></div>
                     <div><i class="fa-regular fa-heart"></i></div>
-                    <div><i class="fa-solid fa-bag-shopping" onclick="openBag()"></i></div>
+                    <!--<div><i class="fa-solid fa-bag-shopping" onclick="openBag()"></i></div>-->
+                    <div class="popup" onclick="openBag()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="popuptext1" id="myPopup1"><h3>Din shopping bag er tom</h3></span>
+                        <span class="popuptext2" id="myPopup2"><h3>Din shopping bag er fuld</h3></span>
+                      </div>
                 </div>
         <!--Sidebarmenu-->
                 <div id="overlay"></div>
@@ -58,10 +66,44 @@
                 </div>
         </header>
         <main class="main-grid">
-            <div class="slideshow">
-                <!-- Nayas slideshow her-->
-                <div class="container img"><img class="hest" src="billeder/hest.png"></div>
-            </div>
+            
+            <div class="slideshow-container">
+        
+        <!--Full width billeder med nummertekst-->
+                <div class="mySlides">
+                    <div class="numbertext">1/4</div>
+                    <img src="billeder/buks1.jpeg" alt="Billede nr. 1">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2/4</div>
+                    <img src="billeder/buks2.jpeg" alt="Billede nr. 2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3/4</div>
+                    <img src="billeder/buks3.jpeg" alt="Billede nr. 3">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4/4</div>
+                    <img src="billeder/buks4.jpeg" alt="Billede nr. 4">
+                </div>
+    
+        <!--Frem og tilbage knapper-->
+                <a class="tilbage" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="frem" onclick="plusSlides(1)">&#10095;</a>
+     
+
+    <!--Dots-->
+                <div class="cirkler">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div> 
+    
             <!--her står alt det til højre-->
             <div class="info">
                 <div class="american">
@@ -84,7 +126,7 @@
 
                 <div class="farven">
                     <p class="farve"> Farve </p>
-                    <p> -Fuchsia Pink</p>
+                    <p> - Fuchsia Pink</p>
                 </div>
 
                 <h3> Vælg Størrelse</h3>
