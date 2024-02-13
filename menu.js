@@ -1,3 +1,4 @@
+// Open & close sidebar 
 function opensidebar() {
     document.getElementById('sidebar').style.left = '0px';
     document.getElementById('overlay').style.display = 'block';
@@ -10,7 +11,7 @@ function opensidebar() {
   }
 
 
-
+// Dropdown funktioner
   function drop() {
     let damedrop = document.getElementById("dame");
     if (damedrop.style.display == "block") {
@@ -19,7 +20,6 @@ function opensidebar() {
         damedrop.style.display = "block";
     }
 }
-
 
 function drop2() {
     let herredrop = document.getElementById("herre");
