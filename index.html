@@ -6,13 +6,14 @@
         <title>hn</title>
         <script src="https://kit.fontawesome.com/6eeebea63a.js" crossorigin="anonymous"></script>
         <script src="heart.js" defer></script>
+        <script src="menu.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <!--header-->
         <header class="header">
                 <div class="header-left">
-                    <div><i class="fa-solid fa-grip-lines"></i></div>
+                    <div><i class="fa-solid fa-grip-lines" id="streger" onclick="opensidebar()"></i></div>
                     <div><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
                 <div> <img class="logo" src="billeder/h-n.png" alt="logo"></div>
@@ -20,6 +21,39 @@
                     <div><a href="signup.html"><i class="fa-solid fa-user"></i></a></div>
                     <div><i class="fa-regular fa-heart"></i></div>
                     <div><i class="fa-solid fa-bag-shopping" onclick="openBag()"></i></div>
+                </div>
+
+                <div id="overlay"></div>
+                <div id="sidebar">
+                    <i class="fa-solid fa-x" id="luk" onclick="luksidebar()"></i>
+                <nav>
+                    <h2>Vælg kategori</h2>
+                    <h2 onclick="drop()" class="droptitle"> Dame </h2>
+                        <div id="dame" class="dropdowncontent">
+                            <a href="#"> Trøjer </a>
+                            <a href="#"> Kjoler </a>
+                            <a href="#"> Bukser</a>
+                            <a href="#"> Sko </a>
+                            <a href="#"> Accessories</a>
+                        </div>
+        
+                    <h2 onclick="drop2()" class="droptitle"> Herre </h2>
+                        <div id="herre" class="dropdowncontent">
+                            <a href="#"> Trøjer </a>
+                            <a href="#"> Bukser</a>
+                            <a href="#"> Sko </a>
+                            <a href="#"> Accessories</a>
+                        </div>
+           
+                    <h2 onclick="drop3()" class="droptitle"> Børn </h2>
+                        <div id="kids" class="dropdowncontent">
+                            <a href="#"> Trøjer </a>
+                            <a href="#"> Kjoler </a>
+                            <a href="#"> Bukser</a>
+                            <a href="#"> Sko </a>
+                        </div>
+                    <h2 id="sale" class="droptitle"> Sale </h2>
+                </nav>
                 </div>
         </header>
         <main class="main-grid">
