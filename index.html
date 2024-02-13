@@ -7,6 +7,7 @@
         <script src="https://kit.fontawesome.com/6eeebea63a.js" crossorigin="anonymous"></script>
         <script src="heart.js" defer></script>
         <script src="menu.js" defer></script>
+        <script src="shopping-bag.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -20,7 +21,12 @@
                 <div class="header-right">
                     <div><a href="signup.html"><i class="fa-solid fa-user"></i></a></div>
                     <div><i class="fa-regular fa-heart"></i></div>
-                    <div><i class="fa-solid fa-bag-shopping" onclick="openBag()"></i></div>
+                    <!--<div><i class="fa-solid fa-bag-shopping" onclick="openBag()"></i></div>-->
+                    <div class="popup" onclick="openBag()">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="popuptext1" id="myPopup1"><h3>Din shopping bag er tom</h3></span>
+                        <span class="popuptext2" id="myPopup2"><h3>Din shopping bag er fuld</h3></span>
+                      </div>
                 </div>
         <!--Sidebarmenu-->
                 <div id="overlay"></div>
