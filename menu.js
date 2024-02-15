@@ -43,7 +43,7 @@ function drop3() {
     }
 }
 
-// Her er en array og loop til vores variabler 
+// Her er array og loop 
 
 let kategori =['Trøjer', 'Bukser', 'Sko', 'Accessories']; 
 let options = ""; 
