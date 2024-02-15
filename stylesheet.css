@@ -166,6 +166,10 @@ background-color: white;}
     visibility: visible;
   }
 
+  .popup .hidden {
+    visibility: hidden;
+  }
+
 /* main */
 
 .main-grid {
