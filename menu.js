@@ -1,3 +1,5 @@
+// Lavet af Cecilie Kruse Fyhn Knudsen
+
 // Open & close sidebar 
 function opensidebar() {
     document.getElementById('sidebar').style.left = '0px';
