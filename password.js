@@ -1,3 +1,5 @@
+//Lavet af Yagmur Tolumcu
+
 let eyeicon = document.getElementById("eyeicon");
 let password = document.getElementById("psw");
 
