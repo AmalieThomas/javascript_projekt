@@ -84,7 +84,7 @@ a {
 #luk {align-self: flex-end;
     cursor: pointer;}
 /* styling af dropdown */
-nav {display:flex;
+.kategorierne {display:flex;
 flex-direction: column;
 background-color: white;}
 
