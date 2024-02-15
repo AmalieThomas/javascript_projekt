@@ -1,4 +1,4 @@
-//Amalie Kragh Thomas
+//Lavet af Amalie Kragh Thomas
 
 let selectedSize = null
 
