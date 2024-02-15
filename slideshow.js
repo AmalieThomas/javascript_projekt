@@ -1,4 +1,4 @@
-
+// Lavet Af Naya Frederikkk Catling
 let slideIndex = 1;
 showSlides(slideIndex);
 
