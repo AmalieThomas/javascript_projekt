@@ -11,16 +11,6 @@ eyeicon.onclick = function () {
     }
 };
 
-//matchende adgandskode
-document.addEventListener('DOMContentLoaded', function () {
-    var passwordInput = document.getElementById('psw');
-    var repeatPasswordInput = document.getElementById('psw-repeat');
-  
-    //event listener for hver gang tasten løftes (keyup)
-    passwordInput.addEventListener('keyup', checkPasswordMatch);
-    repeatPasswordInput.addEventListener('keyup', checkPasswordMatch);
-});
-
 
 function checkPasswordMatch() {
     var password = document.getElementById('psw').value;
@@ -37,37 +27,14 @@ function checkPasswordMatch() {
     }
 }
 
-
-//login og bliv member knap fungerer
-document.addEventListener('DOMContentLoaded', function () {
-    // Find knapperne
-    var signupButton = document.querySelector('.signupbtn');
-    var loginButton = document.querySelector('.cancelbtn');
-
-    //event listeners til knapperne
-    signupButton.addEventListener('click', function (event) {
-        event.preventDefault(); // Forhindrer standard formularindsendelse
-        handleSignup();
-    });
-
-    loginButton.addEventListener('click', function (event) {
-        alert('Log ind-knappen blev klikket.');
-    });
-});
-
-function handleSignup() {
-    //når formularen er gyldig, fortsættes den med at sende eller udføre andre handlinger
-    alert('Brugeren er blevet tilmeldt!');
-}
-
+// Globale variabler, fordi det bruges i to funktioner 
+let nameInput = document.getElementById('navn');
+let nicknameInput = document.getElementById('nickname');
+let emailInput = document.getElementById('email');
+let passwordInput = document.getElementById('psw');
+let repeatPasswordInput = document.getElementById('psw-repeat');
 //hvis ikke alle felter er udfyldt vil der komme en popmeddelse
 function handleSignup() {
-    var nameInput = document.getElementById('navn');
-    var nicknameInput = document.getElementById('nickname');
-    var emailInput = document.getElementById('email');
-    var passwordInput = document.getElementById('psw');
-    var repeatPasswordInput = document.getElementById('psw-repeat');
-
     if (
         isEmpty(nameInput) ||
         isEmpty(nicknameInput) ||
@@ -81,6 +48,22 @@ function handleSignup() {
 
     // Hvis formularen er gyldig, kan du fortsætte med at sende den eller udføre andre handlinger
     alert('Velkommen, du er nu blevet en H&N member');
+}
+
+function login() {
+    if (
+        isEmpty(nameInput) ||
+        isEmpty(nicknameInput) ||
+        isEmpty(emailInput) ||
+        isEmpty(passwordInput) ||
+        isEmpty(repeatPasswordInput)
+    ) {
+        alert('Alle felter skal udfyldes.');
+        return; // Stop funktionen, hvis ikke alle felter er udfyldt
+    }
+
+    // Hvis formularen er gyldig, kan du fortsætte med at sende den eller udføre andre handlinger
+    alert('Du er nu logget ind');
 }
 
 // Hjælpefunktion til at kontrollere, om et inputfelt er tomt
