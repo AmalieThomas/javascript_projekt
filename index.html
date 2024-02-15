@@ -25,9 +25,30 @@
                     <div><i class="fa-regular fa-heart"></i></div>
                     <!--<div><i class="fa-solid fa-bag-shopping" onclick="openBag()"></i></div>-->
                     <div class="popup" onclick="openBag()">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i id= "shopping-bag" class="fa-solid fa-bag-shopping"></i>
+      
                         <span class="popuptext1" id="myPopup1"><h3>Din shopping bag er tom</h3></span>
-                        <span class="popuptext2" id="myPopup2"><h3>Din shopping bag er fuld</h3></span>
+                        <span class="popuptext2" id="myPopup2">
+      
+                          <div id="pant"></div>
+      
+                          <div class="Ordre-flex">
+                            <h3>Ordreværdi</h3>
+                            <h3 id ="ordre-value"></h3>
+                          </div>
+                          <div class="levering-flex">
+                            <h3>Levering</h3>
+                            <h3 id="levering-value"></h3>
+                          </div>
+      
+                          <div class="line"></div>
+      
+                          <div class="ialt-flex">
+                            <h3>I alt</h3>
+                            <h3 id="ialt-value">""</h3>
+                          </div>
+                        
+                        </span>
                       </div>
                 </div>
         <!--Sidebarmenu-->
@@ -121,19 +142,19 @@
 
                 <h3> Vælg Størrelse</h3>
                 <div class="size">
-                    <h3>XXS</h3>
-                    <h3>XS</h3>
-                    <h3>S</h3>
-                    <h3>M</h3>
-                    <h3>L/XL</h3>
-                    <h3>2XL</h3>
-                    <h3>3XL</h3>
-                    <h3>4XL</h3>
-                    <h3>5XL</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[0])">XXS</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[1])">XS</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[2])">S</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[3])">M</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[4])">L/XL</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[5])">2XL</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[6])">3XL</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[7])">4XL</h3>
+                    <h3 class="size-button" onclick="sizeToggle(this, sizes[8])">5XL</h3>
                 </div>
 
                 <div class="button-container">
-                    <button class="add">
+                    <button class="add" onclick="addToBag()">
                         <h3>Tilføj</h3> 
                     </button>
                 </div>
