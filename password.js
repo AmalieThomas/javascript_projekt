@@ -70,3 +70,13 @@ function login() {
 function isEmpty(input) {
     return input.value.trim() === '';
 }
+
+var myArray = ['Hunkøn', 'Hankøn', 'Barn', 'Kat', 'Hest', 'Nonne', 'Intetkøn', 'Prinsesse', 'Prins']
+       
+// Dropdown element fra DOM
+var dropdown = "";
+for (var i = 0; i < myArray.length; ++i) {
+
+dropdown += '<option>' + myArray[i] + '</option>'
+}
+document.getElementById("valgmuligheder").innerHTML = dropdown; 

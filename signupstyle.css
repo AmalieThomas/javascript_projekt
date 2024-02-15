@@ -15,6 +15,7 @@ p {font-family: 'Raleway', sans-serif; font-size: 16px; text-align: center; font
 body {
 background-color: #edece9;
 }
+main {padding-top: 90px;}
 
 input[type=text], input[type=password] {
     width: 100%;
