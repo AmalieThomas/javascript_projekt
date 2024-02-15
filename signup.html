@@ -34,14 +34,14 @@
     
             <label for="psw">
                 <h3>*Adgangskode</h3></label>
-                <input type="password" placeholder="Indtast Adgangskode" id="psw" name="psw"  required>
+                <input type="password" placeholder="Indtast Adgangskode" id="psw" name="psw" required onkeyup="checkPasswordMatch()">
                 <img src="billeder/view.png" id="eyeicon">
                 <img src="billeder/hide.png" id="eyeicon-open" style="display: none;">
             </label>
     
 
             <label for="psw-repeat"><h3>*Gentag adgangskode</h3></label>
-            <input type="password" placeholder="Indtast din adgangskode igen" id="psw-repeat" name="psw-repeat" required>
+            <input type="password" placeholder="Indtast din adgangskode igen" id="psw-repeat" name="psw-repeat" required onkeyup="checkPasswordMatch()">
 
             <p id="password-match-message"></p>
 
@@ -57,8 +57,8 @@
             <h2>Ved at oprette denne profil, erklærer du dig enig i vores <a href="#" style="color:dodgerblue">Vilkår og betingelser for H&N member</a>.</h2>
 
             <div class="clearfix">
-                <button type="submit" class="signupbtn">Bliv H&N member</button>
-                <button type="button" class="cancelbtn">Log ind</button>
+                <button type="submit" class="signupbtn" onclick="handleSignup()">Bliv H&N member</button>
+                <button type="button" class="loginbtn" onclick="login()">Log ind</button>
             </div>
         </div>
 
