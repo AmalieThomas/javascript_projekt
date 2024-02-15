@@ -13,7 +13,7 @@ p {font-family: 'Raleway', sans-serif; font-size: 16px; text-align: center; font
 * {box-sizing: border-box} /* Fylder hele siden */
 
 body {
-background-color: #edece9;
+background-color:white;
 }
 main {padding-top: 90px;}
 
@@ -54,7 +54,13 @@ input[type=text], input[type=password] {
   outline: 0;
   font: 24px;
 
+
 }
+select {width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #dad8d8}
 
   button {
     background-color: #000000;
@@ -69,17 +75,17 @@ input[type=text], input[type=password] {
 
   button:hover {
     opacity:1;
-    background-color: #979797;
+    background-color: rgb(225, 16, 16);
   }
 
-  .cancelbtn {
+  .loginbtn {
     padding: 14px 20px;
     background-color: #7c7b7b;
   }
 
-  .cancelbtn:hover {
+  .loginbtn:hover {
     opacity:1;
-    background-color: #000000;
+    background-color: #191919;
   }
 
   .container {
