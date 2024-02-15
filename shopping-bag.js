@@ -59,7 +59,6 @@ function openBag() {
           addProduct(selectedSize)
 
           udregn()
-
       }
   
       else {
@@ -84,7 +83,7 @@ function openBag() {
   function udregn(){
       let ordreValue = pris * antalProduct
   
-      let ialtValue = parseInt(leveringValue + ordreValue)
+      let ialtValue = leveringValue + ordreValue
     
       document.getElementById("ordre-value").innerHTML = ordreValue + " Kr";
       document.getElementById("levering-value").innerHTML = leveringValue + " Kr";
