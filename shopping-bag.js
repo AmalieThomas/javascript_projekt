@@ -1,4 +1,4 @@
-//Amalie
+//Amalie Kragh Thomas
 
 let selectedSize = null
 
