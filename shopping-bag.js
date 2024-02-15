@@ -1,12 +1,7 @@
 let selectedSize = null
 
-/*let time = false
-
-time = true
-
-console.log(time)*/
-
 function openBag() {
+ 
     if ( added == true ) { 
       let popup = document.getElementById("myPopup2");
       popup.classList.toggle("show");
@@ -14,14 +9,14 @@ function openBag() {
     else {
       let popup = document.getElementById("myPopup1");
       popup.classList.toggle("show");
-      /*setTimeout(function() {
-        time = false;
-        console.log(time);
-      }, 4000);*/
     }
 
     document.getElementById("shopping-bag").style.color = ""
   }
+
+  function reloadPage() {
+    location.href = location.href;
+}
   
   let sizes = ["XXS", "XS", "S", "M", "L/XL", "2XL", "3XL", "4XL", "5XL"]
   
