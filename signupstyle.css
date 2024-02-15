@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap');
 
-h1 { font-family: 'DM Sans', sans-serif; font-size: 30px; text-align: center; color: red;}
+h1 { font-family: 'DM Sans', sans-serif; font-size: 30px; text-align: center; color: rgb(211, 11, 11);}
 h2 { font-family: 'Poppins', sans-serif; font-size: 10px; color:rgb(82, 84, 84); font-weight: 500;}
 h3 { font-family: 'Raleway', sans-serif; font-size: 16px; color: rgb(82, 84, 84); font-weight: 500}
 h4 { font-family: 'Poppins', sans-serif; font-size: 13px; color:rgb(82, 84, 84); font-weight: 500;}
