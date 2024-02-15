@@ -70,7 +70,7 @@ function openBag() {
   function addProduct(size){
   
       let productDiv = document.createElement('div');
-      productDiv.innerHTML = '<h3>Compression Shine Stirrup Pant</h3>' +'<p>Str: ' + size + '</p>' +'<p>Pris: ' + pris + ' kr</p>'+ '<p>';
+      productDiv.innerHTML = '<h3>Compression Shine Pink Pant</h3>' +'<p>Str: ' + size + '</p>' +'<p>Pris: ' + pris + ' kr</p>'+ '<p>';
   
       document.getElementById('pant').appendChild(productDiv);
 
