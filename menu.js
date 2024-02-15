@@ -11,22 +11,25 @@ function opensidebar() {
   }
 
 
-// Dropdown funktioner
-  function drop() {
+// Her er vores onclick funktioner til at vise vores content
+function drop() {
     let damedrop = document.getElementById("dame");
     if (damedrop.style.display == "block") {
         damedrop.style.display = "none";
     } else {
+        document.getElementById('dame').innerHTML = dameoptions;
         damedrop.style.display = "block";
     }
-}
+  }
 
 function drop2() {
     let herredrop = document.getElementById("herre");
     if (herredrop.style.display == "block") {
         herredrop.style.display = "none";
     } else {
+        document.getElementById('herre').innerHTML = options; 
         herredrop.style.display = "block";
+
     }
 }
 
@@ -35,6 +38,24 @@ function drop3() {
     if (kidsdrop.style.display == "block") {
         kidsdrop.style.display = "none";
     } else {
+        document.getElementById('kids').innerHTML = options; 
         kidsdrop.style.display = "block";
     }
 }
+
+// Her er en array og loop til vores variabler 
+
+let kategori =['Trøjer', 'Bukser', 'Sko', 'Accessories']; 
+let options = ""; 
+for (var i=0; i < kategori.length;++i) { 
+    options += '<a href="#">' + kategori[i] + "</a>"
+}
+
+// Ny array til dame - de skal jo også købe kjoler 
+
+let damekategori =['Trøjer', 'Kjoler', 'Bukser', 'Sko', 'Accessories']; 
+let dameoptions = ""; 
+for (var i=0; i < damekategori.length;++i) { 
+    dameoptions += '<a href="#">' + damekategori[i] + "</a>"
+}
+
