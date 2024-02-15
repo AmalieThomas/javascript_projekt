@@ -161,8 +161,7 @@ background-color: white;}
   .line {
     border: 1px solid black;
   }
-  
-  /* Toggle this class - hide and show the popup */
+
   .popup .show {
     visibility: visible;
   }
