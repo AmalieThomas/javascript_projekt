@@ -71,6 +71,7 @@ function isEmpty(input) {
     return input.value.trim() === '';
 }
 
+// Her laver vi vores options til select af køn
 var myArray = ['Hunkøn', 'Hankøn', 'Barn', 'Kat', 'Hest', 'Nonne', 'Intetkøn', 'Prinsesse', 'Prins']
        
 // Dropdown element fra DOM
