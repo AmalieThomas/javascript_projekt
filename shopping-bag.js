@@ -1,5 +1,11 @@
 let selectedSize = null
 
+/*let time = false
+
+time = true
+
+console.log(time)*/
+
 function openBag() {
     if ( added == true ) { 
       let popup = document.getElementById("myPopup2");
@@ -8,6 +14,10 @@ function openBag() {
     else {
       let popup = document.getElementById("myPopup1");
       popup.classList.toggle("show");
+      /*setTimeout(function() {
+        time = false;
+        console.log(time);
+      }, 4000);*/
     }
 
     document.getElementById("shopping-bag").style.color = ""
