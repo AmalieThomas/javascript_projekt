@@ -204,6 +204,9 @@ background-color: white;}
     justify-content: space-between;
 }
 
+#heartIcon{
+    cursor: pointer;
+}
 
 .priser {
     display: flex;
@@ -257,6 +260,7 @@ background-color: white;}
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
+    cursor: pointer;
 }
 
 .size *{
@@ -287,6 +291,7 @@ background-color: white;}
     color: white;
     background-color: black;
     border: 0;
+    cursor: pointer;
 }
 
 .add:hover {
