@@ -1,3 +1,5 @@
+//Amalie
+
 let selectedSize = null
 
 function openBag() {
@@ -55,9 +57,7 @@ function openBag() {
       if (selectedSize != null){
 
           antalProduct++
-
           addProduct(selectedSize)
-
           udregn()
       }
   
