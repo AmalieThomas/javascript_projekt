@@ -50,7 +50,7 @@ function drop3() {
 let kategori =['Trøjer', 'Bukser', 'Sko', 'Accessories']; 
 let options = ""; 
 for (var i=0; i < kategori.length;++i) { 
-    options += '<a href="#">' + kategori[i] + "</a>"
+    options += '<a href="#">' + kategori[i] + '</a>'
 }
 
 // Ny array til dame - de skal jo også købe kjoler 
