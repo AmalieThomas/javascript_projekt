@@ -58,6 +58,6 @@ for (var i=0; i < kategori.length;++i) {
 let damekategori =['Trøjer', 'Kjoler', 'Bukser', 'Sko', 'Accessories']; 
 let dameoptions = ""; 
 for (var i=0; i < damekategori.length;++i) { 
-    dameoptions += '<a href="#">' + damekategori[i] + "</a>"
+    dameoptions += '<a href="#">' + damekategori[i] + '</a>'
 }
 
